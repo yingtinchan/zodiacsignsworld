@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	background-color: #A4EFED;
+	font-size: 14pt;
+	text-align: center;
+}
+
+body a:link{
+	color: #ff0000;
+}
+
+body a:visited{
+	color: #0000ff;
+}
+
+body a:visited{
+	color: #aa00ff;
+}
+.shadow{
+	box-shadow: 8px 8px 5px #444;
+}
+.container{
+	mragin-left: auto;
+	margin-right: auto;
+	padding-left: auto;
+	padding-right: auto;
+}
+.table{
+	
+}
+.table #index_table{
+	padding-left: auto;
+	padding-right: auto;
+}
+.table #index_table .Navagation_Bar{
+	
+}
+.table #index_table .index_table_tr{
+	
+}
+.table #index_table .index_table_td{
+	
+}
+#index_main{
+	
+}
+

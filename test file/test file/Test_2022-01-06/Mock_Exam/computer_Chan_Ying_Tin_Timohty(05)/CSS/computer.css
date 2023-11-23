@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin: 0px;
+	background-color: #a4efed;
+	font-size: 14pt;
+}
+#banner{
+	width: 1000px;
+	length: 100px;
+	object-fit: cover;  
+}
+img{
+	align-content: : center;
+}
+a:unvisted{
+	color: #ff0000;
+}
+a:visited{
+	color: #0000ff;
+}
+a:hover{
+	color: v#aa00ff;
+}
+

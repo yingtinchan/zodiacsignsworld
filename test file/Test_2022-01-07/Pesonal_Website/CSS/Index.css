@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url("../image/Backgorund/Zodiac_Signs_Blackground.jpg");
+	background-size: 2250px 1500px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	position: relative;
+  	width: 85%;
+	margin-top: 30px;
+	margin-bottom: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+#menu {
+	background: #575B60;
+	color: #FFF;
+	height: 55px;
+	padding-left: 60px;
+	margin-buttom: 100px;
+	border-radius: 10px;
+	width: 850px;
+	length: 1800px;
+  	border: 0px solid;
+  	display: flex;
+  	flex-wrap: wrap;
+	position: relative;
+	justify-content: space-between;
+	
+}
+#menu ul, #menu li {
+	margin: auto auto;
+	padding: 0;
+	list-style: none
+}
+#menu ul {
+	width: 100%;
+}
+#menu li {
+	float: left;
+	display: inline;
+	position: relative;
+}
+#menu a {
+	display: block;
+	line-height: 55px;
+	padding: 0 24px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-family: monospace;
+	font-size: 20px;
+	letter-spacing: 2px;
+}
+#menu a.dropdown-arrow:after {
+	content: "\25BE";
+	margin-left: 5px;
+	letter-spacing: 1px;
+}
+#menu li a:hover {
+	color: #0099CC;
+	background: #F2F2F2;
+}
+#menu input {
+	display: none;
+	margin: 0;
+	padding: 0;
+	height: 45px;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer
+}
+#menu label {
+	display: none;
+	line-height: 45px;
+	text-align: center;
+	position: absolute;
+	left: 35px
+}
+#menu label:before {
+	font-size: 1.6em;
+	content: "\2261"; 
+	margin-left: 20px;
+}
+#menu ul.sub-menus{
+	height: auto;
+	overflow: hidden;
+	width: 170px;
+	background: #444444;
+	position: absolute;
+	z-index: 99;
+	display: none;
+}
+#menu ul.sub-menus li {
+	display: block;
+	width: 100%;
+}
+#menu ul.sub-menus a {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+#menu li:hover ul.sub-menus {
+	display: block
+}
+#menu ul.sub-menus a:hover{
+	background: #F2F2F2;
+	color: #444444;
+}
+@media screen and (max-width : 800px ){
+	#menu {position:relative}
+	#menu ul {background:#111;position:absolute;top:100%;right:0;left:0;z-index:3;height:auto;display:none}
+	#menu ul.sub-menus {width:100%;position:static;}
+	#menu ul.sub-menus a {padding-left:30px;}
+	#menu li {display:block;float:none;width:auto;}
+	#menu input, #menu label {position:absolute;top:0;left:0;display:block}
+	#menu input {z-index:4}
+	#menu input:checked + label {color:white}
+	#menu input:checked + label:before {content:"\00d7"}
+	#menu input:checked ~ ul {display:block}
+}
+
+#image{
+	width: 900px;
+	length: 1200px;
+	position: relative;
+  	border: 0px solid;
+	margin-left: auto;
+	margin-right: auto;
+  	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.image {
+    position: relative;
+	transform: perspective(800px);
+    width: 200px;
+	height: 294px;
+	margin-top: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.div{
+	width: 150px;
+  	height: 220px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.audio{
+	width: 1200px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-buttom: 30px;
+	display: flex;
+  	flex-wrap: wrap;
+	justify-content: space-around;
+}
+audio{
+	width: 900px;
+	height: 70px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-buttom: 30px;
+}
+
+
+.image__img {
+    width: 100%;
+	margin: auto;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+	margin-left: auto;
+	border-radius: 15px;
+    background: linear-gradient( rgba(0, 0, 250, 0.3), rgba(191,191,191,1));
+    color: #ffffff;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.54),0 17px 50px 0 rgba(0,0,0,.79)
+}
+
+.image__overlay .aries{
+	position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.image__overlay--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay--primary {
+    background: linear-gradient( rgba(0, 0, 250, 0.3), rgba(191,191,191,1));
+}
+
+.image__overlay > * {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+    opacity: 1;
+}
+
+.image__overlay:hover > * {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
+hr{
+	margin-top: 100px;
+	width: 800px;
+	border: 1px solid #D0D0D0;
+}

@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+
+.css-table{
+	display: table;
+}
+.css-table .thead{
+	display:table-header-group;
+}
+.css-table .tbody{
+	display:table-row-group;
+}
+.css-table .tr{
+	display:table-row;
+}
+.css-table .th, .css-table .td{
+	display:table-cell;
+}

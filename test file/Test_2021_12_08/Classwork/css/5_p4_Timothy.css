@@ -1,0 +1,16 @@
+#Border_Structure{					/* Structure Name ¦ý#«Y­øª¾«§ªd */
+	border: 2px solid black; 			/* Áï«×  */
+	background-color: #9EEFFD;
+	font-size: 5px;}
+
+h1.Redinline{
+	display:inline;
+	font-size: 32px;
+	color: #FF0000;}
+h1.inline{
+	display:inline;}
+p.Cat{
+	display:inline;
+	font-size: 7px;
+	font-weight: bold;
+	font-style: italic;}	
