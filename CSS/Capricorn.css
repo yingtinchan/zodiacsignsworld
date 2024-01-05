@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	background-image: url("../image/Backgorund/Capricorn_Background.png");
+    background-size: cover;
+	background-size: 1926px 1100px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+  	width: 85%;
+	margin-top: 30px;
+	margin-bottom: 100px;
+  	margin-left: auto;
+  	margin-right: auto;
+}
